@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  background: #f5f5f5
+}
+#client-title-bar {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1989fa;
+  padding: 0 15px;
+  height: 40px;
+  color: #FFF;
+}
+#client-title-bar + .view-port {
+  height: calc(100vh - 40px)
+}
+#client-title-bar .icon-wrapper {
+  padding: 7px;
+  -webkit-app-region: no-drag;
+  width: 25px;
+  height: 25px;
+  line-height: 1;
+  border-radius: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#client-title-bar .icon-wrapper:hover {
+  background: rgba(255, 255, 255, 0.3)
+}
+#client-title-bar .icon-wrapper:active {
+  background: rgba(255, 255, 255, 0.2)
+} 
+#client-title-bar .icon-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+#client-title-bar-left {
+  width: 200px;
+  text-align: left;
+}
+#client-title-bar-left #icon-refresh {
+  width: 28px;
+  height: 28px;
+}
+#client-title-bar-center #icon-eleme {
+  width: 34px;
+  height: 34px;
+  cursor: default;
+}
+#client-title-bar-center #icon-eleme:hover {
+  background: transparent;
+}
+#client-title-bar-center #icon-eleme:active {
+  background: transparent;
+}
+#client-title-bar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px;
+  text-align: right;
+}
+#client-title-bar-right .icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+#client-title-bar-right #icon-min img {
+  height: 2px
+}
+#client-title-bar-right #icon-unmax {
+  display: none
+}
+#client-title-bar-right #icon-close:hover {
+  background: rgb(250, 85, 85)
+}
+#client-title-bar-right #icon-close:active {
+  background: rgba(250, 85, 85, .9)
+}
